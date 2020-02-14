@@ -52,6 +52,7 @@ public class MarsRoverTest {
         assertEquals(DirectionTypes.N, marsRover.getDirection());
         assertEquals(0, marsRover.getX());
         assertEquals(1, marsRover.getY());
+//        assertTrue(marsRover.isAtPosition(0, 1));
     }
 
     @Test

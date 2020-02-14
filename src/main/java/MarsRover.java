@@ -5,6 +5,16 @@ public class MarsRover {
     private DirectionTypes direction;
     private Plateau plateau;
 
+    public MarsRover() {
+    }
+
+    public MarsRover(String currentStateX, String currentStateY, Plateau plateau, String direction) {
+        this.x = Integer.parseInt(currentStateX);
+        this.y = Integer.parseInt(currentStateY);
+        this.plateau = plateau;
+        this.direction = DirectionTypes.valueOf(direction);
+    }
+
     public int getX() {
         return x;
     }
@@ -64,10 +74,6 @@ public class MarsRover {
 
     @Override
     public String toString() {
-        return "MarsRover{" +
-                "x=" + x +
-                ", y=" + y +
-                ", direction=" + direction +
-                '}';
+        return x + " " + y + " " + direction;
     }
 }
